@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1 class="text__header">
+            Memory Cards
+        </h1>
+
+
+        <div id="cards__container" class="cards__container"></div>
+
+
+        <div class="navigation">
+            <button id="prev" class="nav__btn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+
+            <span id="current" class="current"></span>
+
+            <button id="next" class="nav__btn">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div id="modal__container" class="modal__container">
+            <button id="hide" class="hide btn btn-small btn-ghost">
+                <i class="icon fas fa-times"></i>
+            </button>
+
+            <h1 class="modal__header">
+                Add New Card
+            </h1>
+
+            <div class="form__group">
+                <label id="label__question" for="question">Question</label>
+                <textarea id="question" class="input__text" placeholder="Enter Question..."></textarea>
+            </div>
+
+            <div class="form__group">
+                <label id="label__answer" for="answer">Answer</label>
+                <textarea id="answer" class="input__text" placeholder="Enter Answer..."></textarea>
+            </div>
+
+            <button id="add__btn-mod" class="add__btn-mod">
+                <i class="icon fas fa-plus"></i> Add Card
+            </button>
+
+            <div id="error" class="error__container">
+                <span id="error__text" class="error">Error!</span>
+            </div>
+        </div>
+
+        <div class="btn__container">
+            <button id="clear__btn" class="clear__btn">
+                <i class="icon fas fa-trash"></i> Clear Cards
+            </button>
+
+            <button id="show__btn" class="show__btn">
+                <i class="icon fas fa-plus"></i> Add New Card
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
